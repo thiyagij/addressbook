@@ -12,7 +12,7 @@ pipeline {
             
              steps {
                
-               sh '/opt/apache-maven-3.6.1/bin/mvn clean package'
+               sh '/opt/apache-maven-3.6.2/bin/mvn clean install'
                 //junit '**/target/surefire-reports/TEST-*.xml'
 		archiveArtifacts artifacts: '**/target/*.war', fingerprint: true
             }
@@ -26,7 +26,7 @@ pipeline {
     }
         stage('Docker Push') {
       steps {
-        withCredentials([usernamePassword(credentialsId: '381106ce-4008-463c-9ea6-666fbdc3727d', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
+        withCredentials([usernamePassword(credentialsId: '0cbba8fe-3712-4b74-9c83-b6508dea1199', passwordVariable: 'dockerHubPassword', usernameVariable: 'dockerHubUser')]) {
           sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
           sh 'docker push dilipsun/addressbook$(git rev-parse HEAD):latest'
         }

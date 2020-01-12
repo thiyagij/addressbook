@@ -10,3 +10,4 @@ test pipeline
 last one
 test
 cicd
+gopi cicd

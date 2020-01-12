@@ -12,7 +12,7 @@ pipeline {
             
              steps {
                
-               sh '/opt/apache-maven-3.6.2/bin/mvn clean install'
+               sh '/opt/apache-maven-3.6.3/bin/mvn clean install'
                 //junit '**/target/surefire-reports/TEST-*.xml'
 		archiveArtifacts artifacts: '**/target/*.war', fingerprint: true
             }

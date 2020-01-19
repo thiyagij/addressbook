@@ -66,8 +66,8 @@
     </dependencies>
     <distributionManagement>
        <repository>
-         <id>test-release</id>
-         <url>http://54.145.242.184:8081/nexus/content/repositories/test-release</url>
+         <id>new-release</id>
+         <url>http://34.229.148.129:8081/nexus/content/repositories/new-release</url>
        </repository>
     </distributionManagement>
 

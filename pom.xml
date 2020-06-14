@@ -71,7 +71,7 @@
     </dependencies>
     <distributionManagement>
        <repository>
-         <id>new-release</id>
+         <id>maven-releases</id>
          <url>http://3.227.0.230:8081/repository/new-release</url>
        </repository>
     </distributionManagement>

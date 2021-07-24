@@ -13,8 +13,8 @@
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <vaadin.version>8.0.0.alpha2</vaadin.version>
         <vaadin.plugin.version>${vaadin.version}</vaadin.plugin.version>
-        <sonar.host.url>http://3.83.231.131:9000/</sonar.host.url>
-	<sonar.login>0f369bbae8b080f358b68f857963c187ae032118</sonar.login>
+        <sonar.host.url>http://54.90.237.135:9000/</sonar.host.url>
+	<sonar.login>829f34cf703beac2df5c4fe3309d9c09e60cc87b</sonar.login>
         <!-- <sonar.password>admin</sonar.password> -->
 	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
